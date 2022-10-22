@@ -13,11 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Barra de navegacion
+Route::get('/', 'HomeController@Index')->name('Inicio');
+Route::get('/Nosotros', 'HomeController@Nosotros')->name('Nosotros');
+Route::get('/Servicios', 'HomeController@Servicios')->name('Servicios');
+Route::get('Voluntariado', 'HomeController@Voluntariado')->name('Voluntariado');
+Route::get('/Donaciones', 'HomeController@Donaciones')->name('Donaciones');
+Route::get('/Contacto', 'HomeController@Contacto')->name('Contacto');
+
+// Route para los pots de las noticias
+Route::resource('/noticias', 'PostController');
 
 
-Route::get('/nosotros', function () {
+//Ruta para nosotros
+/*Route::get('/nosotros', function () {
     return view('nosotros');
-});
+});*/
