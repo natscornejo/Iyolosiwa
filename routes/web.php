@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Barra de navegacion
-Route::get('/', 'HomeController@Index')->name('Inicio');
+Route::get('/Inicio', 'HomeController@Index')->name('Inicio');
 Route::get('/Nosotros', 'HomeController@Nosotros')->name('Nosotros');
 Route::get('/Servicios', 'HomeController@Servicios')->name('Servicios');
 Route::get('Voluntariado', 'HomeController@Voluntariado')->name('Voluntariado');
@@ -29,3 +29,7 @@ Route::resource('/noticias', 'PostController');
 /*Route::get('/nosotros', function () {
     return view('nosotros');
 });*/
+Auth::routes();
+
+// Route para el dashboard
+Route::get('/Dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('Dashboard');

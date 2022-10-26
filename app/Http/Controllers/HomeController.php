@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-        public function Index()
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
+    public function Index()
     {
         $pnosotros = 'Nosotros';
         $pservicios = 'Servicios';
@@ -102,6 +106,14 @@ class HomeController extends Controller
         ->with('pservicios',$pservicios)
         ->with('pvoluntariado',$pvoluntariado)
         ->with('pdonaciones',$pdonaciones);
+    }
+
+    public function Dashboard()
+    {
+        $pdashboard = 'Dashboard';
+
+        return view('dashboard')
+        ->with('pdashboard', $pdashboard);
     }
 }
 
