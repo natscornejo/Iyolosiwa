@@ -81,7 +81,7 @@
 
                     <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
                         <li class="nav-item mx-2">
-                            <a class="nav-link h5" href="" target="blank">
+                            <a class="nav-link mx-2" href="{{ route('login') }}">
                                 <h5 class="bn">
                                     INICIAR SESION <i class=""></i><ion-icon name="person"></ion-icon>
                                 </h5>

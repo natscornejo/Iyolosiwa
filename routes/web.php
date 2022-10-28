@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Barra de navegacion
-Route::get('/Inicio', 'HomeController@Index')->name('Inicio');
-Route::get('/Nosotros', 'HomeController@Nosotros')->name('Nosotros');
-Route::get('/Servicios', 'HomeController@Servicios')->name('Servicios');
-Route::get('Voluntariado', 'HomeController@Voluntariado')->name('Voluntariado');
-Route::get('/Donaciones', 'HomeController@Donaciones')->name('Donaciones');
-Route::get('/Contacto', 'HomeController@Contacto')->name('Contacto');
+Route::get('/', 'HomeController@Index')->name('Inicio');
+Route::get('/nosotros', 'HomeController@Nosotros')->name('Nosotros');
+Route::get('/servicios', 'HomeController@Servicios')->name('Servicios');
+Route::get('voluntariado', 'HomeController@Voluntariado')->name('Voluntariado');
+Route::get('/donaciones', 'HomeController@Donaciones')->name('Donaciones');
+Route::get('/contacto', 'HomeController@Contacto')->name('Contacto');
 
 // Route para los pots de las noticias
 Route::resource('/noticias', 'PostController');
@@ -31,5 +31,5 @@ Route::resource('/noticias', 'PostController');
 });*/
 Auth::routes();
 
-// Route para el dashboard
-Route::get('/Dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('Dashboard');
+// Route para el dashboard, cuando haces login
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('Dashboard');

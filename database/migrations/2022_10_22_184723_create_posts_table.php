@@ -18,9 +18,8 @@ class CreatePostsTable extends Migration
 
             $table->string('title');
             $table->text('body');
-
-            $table->string('author')->nullable();
             $table->date('date');
+            $table->string('author')->nullable();
             $table->string('keywords')->nullable();
 
             $table->timestamps();
