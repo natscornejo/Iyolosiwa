@@ -17,6 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+    // Aqui agregas la pantalla que quieres que te mande encuanto te logeas
     public const HOME = '/dashboard';
 
     /**
