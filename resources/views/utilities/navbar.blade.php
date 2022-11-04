@@ -54,14 +54,24 @@
                 </li>
             </ul>
 
+            <!-- Dropdown -->
             <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
                 <li class="nav-item mx-2">
                     <a class="nav-link mx-2 dropdown">
                         <h5 class="bn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            INICIAR SESION <i class=""></i><ion-icon name="person"></ion-icon>
+                            ACCESO <i class=""></i><ion-icon name="person"></ion-icon>
                         </h5>
                         <form class="dropdown-menu p-4" method="POST" action="{{ route('login') }}">
                             @csrf
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-md-end tituloDD">Iniciar sesión</label>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-md-end tituloDD">¿Todavía no tienes cuenta?</label>
+                            </div>
+
                             <div class="mb-3">
                                 <label for="email" class="form-label text-md-end"><h5>Correo electronico</h5></label>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="ejemplo@correo.com">
@@ -97,6 +107,7 @@
                     </a>
                 </li>
             </ul>
+            <!-- Dropdown -->
         </div>
     </div>
 </nav>

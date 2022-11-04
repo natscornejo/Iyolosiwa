@@ -31,15 +31,21 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
+
 </head>
 <body>
     <div id="app">
         
-        @include('posts.utilities.navbar')
+        @yield('contentNavBar')
 
         <main class="py-4">
             @yield('content')
         </main>
+    </div>
+
+
+    <div class="container-fluid">
+        @yield('contentFooter')
     </div>
 
     <!-- Ionicos -->
