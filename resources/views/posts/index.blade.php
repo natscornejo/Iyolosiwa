@@ -23,7 +23,7 @@
 <div class="container">
     <!-- Content here -->
     <div class="row justify-content-center">
-        <div class="col-sm-12">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header"><h1>Noticias</h1></div>
 
@@ -61,15 +61,26 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($posts as $post)
                             <tr>
-                                <td scope="row">1</td>
+                                <td scope="row">{{ $post->id }}</td>
                                 <td scope="row">Imgen1.jpg</td>
-                                <td scope="row">Aqui va el titulo</td>
-                                <td scope="row">Aqui va la descripcion</td>
-                                <td scope="row">19/10/2019</td>
-                                <td scope="row">Aqui va el autor de la noticia</td>
-                                <td><a class="btn btn-outline-warning" href="">Ver</a></td>
+                                <td scope="row">{{ $post->title }}</td>
+                                <td scope="row">{{ $post->body }}</td>
+                                <td scope="row">{{ $post->date }}</td>
+                                <td scope="row">{{ $post->author }}</td>
+                                <td>
+                                    <form method="POST" action="{{ route('noticias.destroy', $post->id) }}">
+                                        <a class="btn btn-danger btn-sm" type="submit" data-bs-toggle="tooltip" data-bs-title="Borrar"><i class="bi bi-x-circle-fill"></i></a>
+                                        {{ csrf_field()}}
+                                        {{ method_field('DELETE')}}
+                                    </form>
+                                        <a class="btn btn-warning btn-sm" data-bs-toggle="tooltip" data-bs-title="Ver" href="{{ route('noticias.show', $post->id) }}"> <i class="bi bi-eye-fill"></i></a>
+
+                                        <a class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Editar" href="{{ route('noticias.edit', $post->id) }}"><i class="bi bi-pencil-square"></i></a>
+                                </td>
                             </tr>
+                             @endforeach
                         </tbody>
                     </table>
                 </div>

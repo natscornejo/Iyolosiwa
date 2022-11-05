@@ -54,21 +54,43 @@ class PostController extends Controller
     }
 
 
-    public function show(Post $post)
+    public function show($id)
     {
         return view('posts.show');
     }
 
 
-    public function edit(Post $post)
+    public function edit($id)
     {
-        return view('posts.edit');
+        $post = Post::find($id);
+
+        return view('posts.edit')->with('post', $post);
     }
 
 
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
+
+        // Obligatorios   
+        $post->title    = $request->title;
+        $post->body     = $request->body;
+        $post->date     = $request->date;
+        // Opcionales 
+        $post->author   = $request->author;
+        $post->keywords = $request->keywords;
+
+        $post->save();
+
+        // Mensaje que se muestra cuando todo sale bien
+        Session::flash('Actulizado', 'tu informacion se actulizo');
+
+        // Regresa a la pagina anterior/
+        return redirect()->route('noticias.index');
+        // return view('posts.index');
+
+        // Manda el request completo
+        // dd($request->all());
     }
 
     public function destroy($id)

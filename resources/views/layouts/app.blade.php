@@ -62,6 +62,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
+        // Tooltips
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+            )
+        const tooltipList = [...tooltipTriggerList].map(
+            tooltipTriggerEl => new bootstrap.Tooltip(
+                tooltipTriggerEl
+                )
+            )
+
         // Swiper
         var swiper = new Swiper(".mySwiper", {
             pagination: {

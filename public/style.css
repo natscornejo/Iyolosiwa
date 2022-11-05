@@ -16,7 +16,8 @@
     left: -246px;
     margin-top: var(--bs-dropdown-spacer);
  }
- 
+
+
 .dropdown-toggle{
  	cursor: pointer;
 }
@@ -29,7 +30,7 @@
 
 body {
 	background: #FDFCFB;
-	font-family: Helvetica Neue, Helvetica, Roboto, sans-serif;
+	font-family: Roboto, Helvetica Neue, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #000000;
 	margin: 0;
@@ -215,14 +216,44 @@ p {
 }
 */
 
-/*INDEX*/
+
+/*navbar*/
 .tituloDD{
 	font-family: Roboto;
 	font-size: 35px;
 	font-weight: bold;
 	color: #2A7560;
-
  }
+
+.preguntaDD{
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: normal;
+	margin-right: 15px;
+ }
+
+ .linkDD{
+    width: -webkit-fill-available;
+	font-family: Roboto;
+	font-size: 16px;
+	color: #2A7560;
+	font-weight: bold;
+	
+ }
+
+ .mismalinea{
+ 	display: inline-flex;
+ }
+
+ .btnLog{
+    width: -webkit-fill-available;
+ }
+
+
+/*INDEX*/
+.formularioNoticias{
+	
+}
 
 
 /*NOSOTROS*/

@@ -45,45 +45,43 @@
 			</div>
 
 			<!-- Formulario -->
-			<div class="card-body">
+			<div class="card-body p-4">
 				<form method="POST" action="{{ route('noticias.store')}}">
 					<!-- Token unico para enviar la informacion -->
 					{{ csrf_field()}}
 
-					<div class="form-group">
-						<label for="">Titulo</label>
-						<input class="form-control" type="text" name="title" required="">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Titulo" name="title" required="">
+						<label for="floatingInput">Titulo</label>
 					</div>
 
-					<div class="form-group">
-						<label for="">Cuerpo</label>
-						<textarea class="form-control" name="body" id="" required="" cols="30" rows="10"></textarea>
+					<div class="form-floating mb-3">
+						<textarea type="text" class="form-control" id="floatingTextarea" placeholder="Contenido" style="height: 250px;" name="body" id="" required=""></textarea>
+						<label for="floatingTextarea">Contenido de la noticia</label>
 					</div>
 
-					<div class="form-group">
-						<label for="">Autor</label>
-						<input class="form-control" type="text" name="author">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Autor" name="author">
+						<label for="floatingInput">Autor</label>
 					</div>
 
-					<div class="form-group">
-						<h5>
-							<label for="">Fecha</label>
-						</h5>
-						<input class="form-control" type="date" name="date" required="">
+					<div class="form-floating mb-3">
+						<input type="date" class="form-control" id="floatingInput" placeholder="Fecha" name="date" required="">
+						<label for="floatingInput">Fecha de publicacion</label>
 					</div>
 
-					<div class="form-group">
-						<h5>
-							<label for="">Hashtags</label>
-						</h5>
-					<input class="form-control" type="text" name="keywords">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInputValue" placeholder="Hashtags" value="Iyolosiwa, "name="keywords">
+						<label for="floatingInputValue" data-bs-toggle="tooltip" data-bs-title="Poner los Hashtags se parados por comas">Hashtags</label>
 					</div>
 					
 
-					<button class="btn btn-warning" type="submit">Publicar noticia</button>
+					<button class="mb-3 btn btn-warning" type="submit">Publicar noticia</button>
 
 					<div class="form-group card-footer">
-						Esta noticia sera publicada en la pagina principal de Iyolosiwa
+						<h7>
+							Esta noticia sera publicada en la pagina principal de Iyolosiwa
+						</h7>
 					</div>
 				</form>
 			</div>
@@ -94,3 +92,6 @@
 @endsection
 
 
+@section('contentFooter')
+    @include('utilities.footer')
+@endsection
