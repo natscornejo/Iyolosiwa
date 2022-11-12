@@ -112,5 +112,24 @@ class HomeController extends Controller
         return view('dashboard')
         ->with('pdashboard', $pdashboard);
     }
+
+    // public function NombreDeLaFuncion
+    public function Socios()
+    {
+        $psocios = 'socios';
+
+        // return view('nombre de la plantilla')
+        return view('socios')
+        ->with('psocios', $psocios);
+    }
+
+    public function Tycondiciones()
+    {
+        $ptycondiciones = 'terminos-y-condiciones';
+
+        // return view('nombre de la plantilla')
+        return view('tycondiciones')
+        ->with('ptycondiciones', $ptycondiciones);
+    }
 }
 

@@ -1,17 +1,3 @@
-@if(Session::has('exito'))
-	<div class="alert alert-success alert-dismissible fade show" role="alert">
-  		<h3>Exito!</h3> <p>{{Session::get('exito')}}</p>
-  		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>
-@endif
-
-@if(Session::has('Borrado'))
-	<div class="alert alert-danger alert-dismissible fade show" role="alert">
-  		<h3>Eliminado!</h3> <p>{{Session::get('Borrado')}}</p>
-  		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>
-@endif
-
 @extends('layouts.app')
 
 @section('contentNavBar')
@@ -23,6 +9,21 @@
 	<div class="row justify-content-center">
 		<!-- Content here -->
     <div class="col-sm-8">
+
+    	@if(Session::has('exito'))
+			<div id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+		  		<h3>Exito!</h3> <p>{{Session::get('exito')}}</p>
+		  		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		@endif
+
+		@if(Session::has('Borrado'))
+			<div id="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+		  		<h3>Eliminado!</h3> <p>{{Session::get('Borrado')}}</p>
+		  		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		@endif
+
 		<div class="display-4 mb-4">
 	        <a href="{{ route('Dashboard')}}" class="btn btn-warning" type="button">
 	            <h4>

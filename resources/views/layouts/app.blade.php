@@ -34,11 +34,11 @@
 
 </head>
 <body>
-    <div id="app">
+    <div class="container-fluid" id="app">
         
         @yield('contentNavBar')
 
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
     </div>
@@ -62,6 +62,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
+
+        //Close alerts automatically
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove(); 
+            });
+        }, 4000);
+
         // Tooltips
         const tooltipTriggerList = document.querySelectorAll(
             '[data-bs-toggle="tooltip"]'

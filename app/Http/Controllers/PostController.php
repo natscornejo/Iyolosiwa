@@ -45,8 +45,9 @@ class PostController extends Controller
         // Mensaje que se muestra cuando todo sale bien
         Session::flash('exito', 'tu informacion se guardo');
 
+        return redirect()->route('noticias.index');
         // Regresa a la pagina anterior/
-        return redirect()->back();
+        // return redirect()->back();
         // return view('posts.index');
 
         // Manda el request completo
@@ -99,7 +100,7 @@ class PostController extends Controller
         $post->delete();
 
         // Mensaje que se muestra cuando todo sale bien
-        Session::flash('Borrado', 'Tu piblicacion se ha borrado correctamente');
+        Session::flash('Borrado', 'Tu publicación se ha borrado correctamente');
 
         // Regresa a la pagina anterior/
         return redirect()->back();

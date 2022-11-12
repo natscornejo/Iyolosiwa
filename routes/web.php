@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('/url','Controller@Nombre de la funcion')->name('Nombre con la que se va a llamar en un futuro');
+
 
 // Barra de navegacion
 Route::get('/', 'HomeController@Index')->name('Inicio');
@@ -24,11 +26,10 @@ Route::get('/contacto', 'HomeController@Contacto')->name('Contacto');
 // Route para los pots de las noticias
 Route::resource('/noticias', 'PostController');
 
+// Route para links del footer
+Route::get('/socios', 'HomeController@Socios')->name('Socios');
+Route::get('/terminos-y-condiciones', 'HomeController@Tycondiciones')->name('Tycondiciones');
 
-//Ruta para nosotros
-/*Route::get('/nosotros', function () {
-    return view('nosotros');
-});*/
 Auth::routes();
 
 // Route para el dashboard, cuando haces login

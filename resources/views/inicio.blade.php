@@ -4,6 +4,7 @@
     @include('utilities.navbar')
 @endsection
 
+@section('content')
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -62,6 +63,8 @@
                 
             </div>
         </div>
+
+@endsection
 
 @section('contentFooter')
     @include('utilities.footer')

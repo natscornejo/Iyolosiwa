@@ -32,7 +32,7 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="" class="text-white">Noticias</a>
+                                <a href="{{ route('noticias.index')}}" class="text-white">Noticias</a>
                             </li>
                         </ul>
                     </div>
@@ -43,30 +43,30 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Sobre nosotros</a>
+                                <a href="{{ route('Nosotros') }}" class="text-white">Sobre nosotros</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Socios</a>
+                                <a href="{{ route('Socios') }}" class="text-white">Socios</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Terminos y condiciones</a>
+                                <a href="{{ route('Tycondiciones') }}" class="text-white">Terminos y condiciones</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Politicas de privacidad</a>
+                                <a href="{{ route('Nosotros') }}" class="text-white">Politicas de privacidad</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Contactanos</a>
+                                <a href="{{ route('Contacto') }}" class="text-white">Contactanos</a>
                             </li>
                         </ul>
                     </div>
 
                     <!--Grid column-->
                     <div class="col-lg-3">
-                        <h5 class="text-uppercase">E</h5>
+                        <h5 class="text-uppercase">Aqui va algo</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Noticias</a>
+                                <a href="#!" class="text-white">Otro link</a>
                             </li>
                         </ul>
                     </div>
@@ -74,11 +74,14 @@
 
                     <!--Grid column-->
                     <div class="col-lg-3">
-                        <h5 class="text-uppercase">Inicio</h5>
+                        <h5 class="text-uppercase">Cuenta</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Noticias</a>
+                                <a href="{{ route('register') }}" class="text-white">Registrarse</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('login') }}" class="text-white">Iniciar sesión</a>
                             </li>
                         </ul>
                     </div>

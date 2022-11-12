@@ -1,30 +1,36 @@
 /*Bootstrap*/
+	.bg-success{
+		background-color: #2A7560;
+		--bs-success-rgb: 42,117,96;
+	}
 
-.bg-success{
-	background-color: #2A7560;
-	--bs-success-rgb: 42,117,96;
-}
-
-.container-fluid{
-	--bs-gutter-x: 0;
-}
-
-
-.dropdown-menu[data-bs-popper] {
-    width: 350px;
-    top: 130%;
-    left: -246px;
-    margin-top: var(--bs-dropdown-spacer);
- }
+	.container-fluid{
+		--bs-gutter-x: 0;
+	}
 
 
-.dropdown-toggle{
- 	cursor: pointer;
-}
+	.dropdown-menu[data-bs-popper] {
+	    width: 350px;
+	    top: 130%;
+	    left: -246px;
+	    margin-top: var(--bs-dropdown-spacer);
+	 }
 
-.dropdown-toggle::after {
-    content: none;
-}
+
+	.dropdown-toggle{
+	 	cursor: pointer;
+	}
+
+	.dropdown-toggle::after {
+	    content: none;
+	}
+
+	/*Sidebar*/
+	.flex-column {
+	    flex-direction: column!important;
+	    height: 800px;
+	}
+/*Bootstrap*/
 
 /*HTML*/
 
@@ -35,6 +41,18 @@ body {
 	color: #000000;
 	margin: 0;
 	padding: 0;
+}
+
+/*main{
+	padding-top:76px ;
+}*/
+
+.fixed-top {
+    position: sticky;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 footer{
@@ -176,6 +194,7 @@ p {
 
 .bgcolor{
 	background-color: #C0E2D2;
+	padding-right: 0px;
 }
 
 .bgcolor2{
@@ -264,3 +283,301 @@ p {
 	object-fit: cover;
 	padding: 15px;
 }
+
+/*SERVICIOS*/
+	/*GALERIA*/
+		.main{
+			margin-bottom: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.gallery{
+			padding-bottom: 3em;
+			padding-top: 1em;
+			display: grid;
+			grid-template-columns: repeat(6  , 1fr);
+			grid-auto-rows: 160px;
+			grid-template-areas: 
+			"img1 img1 img2 img2 img3 img3 "
+			"img1 img1 img2 img2 img3 img3"
+			"img1 img1 img4 img4 img5 img5"
+			"img6 img6 img4 img4 img5 img5" 
+			"img6 img6 img4 img4 img5 img5";
+			gap:  .8em;
+			width: 90%;
+			margin: 0px;
+		}
+		.gallery__picture{
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		.gallery__picture::before{
+			content: "LUDOTECA - 4 P.M. A 6:30 P.M.";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(168, 197, 153, .5);
+			transform: translate(100%);
+			transition: transform .4s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.gallery__picture:hover::before{
+			transform: translate(0);
+		}
+
+		.gallery__picture2{
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		.gallery__picture2::before{
+			content: "APOYO CON TAREAS - 4 P.M. A 5:00 P.M.";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(168, 197, 153, .5);
+			transform: translate(100%);
+			transition: transform .4s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.gallery__picture2:hover::before{
+			transform: translate(0);
+		}
+
+		.gallery__picture3{
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		.gallery__picture3::before{
+			content: "LECTURA Y ESCRITURA - 4 P.M. A 5:00 P.M.";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(168, 197, 153, .5);
+			transform: translate(100%);
+			transition: transform .4s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.gallery__picture3:hover::before{
+			transform: translate(0);
+		}
+
+		.gallery__picture4{
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		.gallery__picture4::before{
+			content: "MUJERES: AMOR PORPIO";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(168, 197, 153, .5);
+			transform: translate(100%);
+			transition: transform .4s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.gallery__picture4:hover::before{
+			transform: translate(0);
+		}
+
+		.gallery__picture5{
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		.gallery__picture5::before{
+			content: "JUEGOS DE MESA";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(168, 197, 153, .5);
+			transform: translate(100%);
+			transition: transform .4s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.gallery__picture5:hover::before{
+			transform: translate(0);
+		}
+
+		.gallery__picture6{
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		.gallery__picture6::before{
+			content: "FORMACION: SERVICIO SOCIAL";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(168, 197, 153, .5);
+			transform: translate(100%);
+			transition: transform .4s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.gallery__picture6:hover::before{
+			transform: translate(0);
+		}
+
+		.gallery__picture--g1{
+			grid-area: img1;
+		}
+		.gallery__picture--g2{
+			grid-area: img2;
+		}
+		.gallery__picture--g3{
+			grid-area: img3;
+		}
+		.gallery__picture--g4{
+			grid-area: img4;
+		}
+		.gallery__picture--g5{
+			grid-area: img5;
+		}
+		.gallery__picture--g6{
+			grid-area: img6;
+		}
+		.gallery__img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@media (max-width:500px){
+			.title{
+			font-size: 2rem;
+			padding: .8em 0 .4em;
+			}
+			.gallery{
+				grid-template-columns: 1fr 1fr;
+				grid-template-areas:
+								     "img1 img1"
+									 "img1 img1" 		
+									 "img2 img2" 
+									 "img3 img3" 
+									 "img4 img5" 
+									 "img6 img6" 
+									 "img6 img6";
+			}
+			.gallery__picture::before{
+				font-size: 1rem;
+			}
+		}
+
+		figure{
+			margin: 0px 0 0rem;
+		}
+	/*GALERIA*/
+/*SERVICIOS*/
+
+
+
+/*DONACIONES*/
+
+	/*Donativo por PayPal*/
+   .dj-banner{
+   		margin: 30px 0;
+   		position: relative;
+   	}
+   .dj-banner .dj-bg{
+	   	background-image: url("{{ asset('img/manos.jpg') }}");
+	   	background-repeat: no-repeat;
+	   	background-position: center center;
+	   	background-size: 100vw; 
+	   	/*background-attachment: fixed;*/
+	   	width: 100%;
+   }
+   .dj-banner .dj-bg img{
+   		display: block; 
+   		margin: 20px auto; 
+   		padding: 20px 0;
+   	}
+   .dj-banner .dj-text{
+   		text-align: center; 
+   		padding-bottom: 20px;
+   	}
+   @media screen and (min-width:768px){
+		.dj-banner .dj-bg img{
+			margin-right: 100px;
+      	}
+		.dj-banner .dj-text{
+			position: absolute;
+			top: 50%; 
+			left: 10%;
+			transform: translate(-10%, -50%); 
+			width: 50%; 
+			text-align: left;
+		}
+		.dj-banner .dj-text h1{
+			font-size: calc(2*1.5vw);
+		}
+		.dj-banner .dj-text p{
+			font-size: calc(1.2*1.5vw);
+		}
+   }
+
+
+.fondo {
+background-image: url("{{ asset('img/manos.jpg') }}");
+}
+	/*Transparencia*/
+	.img-icon-block {
+	    position: relative;
+	}
+
+	.img-icon-block:before {
+	    position: absolute;
+	    content: "";
+	    top: -5px;
+	    background-color: #A8C599;
+	    opacity: 0.8;
+	    width: 100px;
+	    right: 99px;
+	    height: 100px;
+	    border-radius: 50%;
+	    z-index: 1;
+	}
+
+	.img-icon-block i{
+	    font-size: 58px;
+	    z-index: 2!important;
+	    color: #333;
+	    position: relative;
+	}
+
+    .feature-block{
+        margin-bottom: 80px;
+    }
+/*DONACIONES*/
