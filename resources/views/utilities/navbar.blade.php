@@ -57,10 +57,43 @@
             <!-- Dropdown -->
             <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
                 <li class="nav-item mx-2">
-                    <a class="nav-link mx-2 dropdown">
-                        <h5 class="bn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            ACCESO <i class=""></i><ion-icon name="person"></ion-icon>
-                        </h5>
+                    <div class="nav-link mx-2 dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            @guest
+                            <h5>
+                                ACCESO <i class=""></i><ion-icon name="person"></ion-icon>
+                            </h5>
+                            @else
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        <h5>{{ Auth::user()->name }}</h5>
+                                    </a>
+
+                                    <div class="dropdown-menu p-4" aria-labelledby="navbarDropdown">
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label text-md-end tituloDD">¡Hola!</label>
+                                        </div>
+
+                                        <a class="dropdown-item" href="{{ route('Dashboard') }}">
+                                            <h5 class="bn">
+                                                Dashboard
+                                            </h5>
+                                        </a>
+
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                            {{ __('Cerrar sesión') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @endguest
+                        </a>
 
                         <div class="dropdown-menu p-4">
 
@@ -70,7 +103,7 @@
 
                             <div class="mb-3 mismalinea">
                                 <label for="email" class="form-label preguntaDD">¿Todavía no tienes cuenta? </label>
-                                <button class="btn linkDD" href="{{ route('register') }}">Crear aqui</button>
+                                <a class="btn linkDD" href="{{ route('register') }}">Crear aqui</a>
                             </div>
 
 
@@ -111,7 +144,7 @@
                         </form>
                         </div>
                         
-                    </a>
+                    </div>
                 </li>
             </ul>
             <!-- Dropdown -->
