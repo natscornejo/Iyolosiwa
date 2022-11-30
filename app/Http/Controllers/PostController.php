@@ -106,4 +106,14 @@ class PostController extends Controller
         return redirect()->back();
 
     }
+
+    // public function NombreDeLaFuncion
+    public function mapa()
+    {
+        $pmapa = 'mapa-del-sitio';
+
+        // return view('nombre de la plantilla')
+        return view('utilities.dashboard.admin-treeview')
+        ->with('pmapa', $pmapa);
+    }
 }

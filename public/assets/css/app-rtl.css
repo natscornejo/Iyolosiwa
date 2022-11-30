@@ -6,23 +6,30 @@ Website: https://coderthemes.com/
 Contact: support@coderthemes.com
 File: Main Css File
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Work+Sans:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600,700|Work+Sans:400,500,600");
 html {
   position: relative;
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: Roboto, Helvetica Neue, Helvetica, sans-serif;
+}
+
 
 body {
   padding-bottom: 60px;
   overflow-x: hidden; }
 
 .metismenu {
-  padding: 0; }
-  .metismenu li {
-    list-style: none; }
-  .metismenu ul {
-    padding: 0; }
-    .metismenu ul li {
-      width: 100%; }
+    padding: 0; 
+}
+.metismenu li {
+    list-style: none; 
+}
+.metismenu ul {
+    padding: 0; 
+}
+.metismenu ul li {
+    width: 100%; 
+}
 
 .metismenu .collapse {
   display: none; }
@@ -1734,12 +1741,12 @@ body.boxed-layout.enlarged .footer {
 
 .jq-toast-single {
   padding: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif;
   background-color: #5089de;
   font-size: 13px;
   line-height: 22px; }
   .jq-toast-single h2 {
-    font-family: "Poppins", sans-serif; }
+    font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif; }
   .jq-toast-single a {
     font-size: 0.8125rem; }
     .jq-toast-single a:hover {
@@ -1822,7 +1829,7 @@ body.boxed-layout.enlarged .footer {
   border-color: #f0643b; }
 
 .swal2-modal {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif;
   -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1); }
   .swal2-modal .swal2-title {
@@ -2033,7 +2040,7 @@ div.hopscotch-bubble {
     border-color: #5089de !important;
     text-shadow: none !important;
     margin: 0 0 0 5px !important;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif;
     color: #fff !important;
     font-weight: 400; }
   div.hopscotch-bubble .hopscotch-bubble-number {
@@ -2063,7 +2070,7 @@ div.hopscotch-bubble {
     font-family: "Work Sans", sans-serif;
     margin-bottom: 10px; }
   div.hopscotch-bubble .hopscotch-content {
-    font-family: "Poppins", sans-serif; }
+    font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif; }
 
 .white-popup-block {
   background: #fff;
@@ -2428,7 +2435,7 @@ div.dt-button-info {
   line-height: 24px; }
 
 .mapael .plotLegend text {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important; }
 
 [data-plugin="customselect"] {
   display: none; }
@@ -2628,7 +2635,7 @@ div.dt-button-info {
   border-top: 6px solid #fff; }
 
 .daterangepicker {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif;
   border: 1px solid #e7eef1;
   -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.3);
           box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.3);
@@ -2712,14 +2719,14 @@ div.dt-button-info {
   z-index: 1; }
 
 .ql-container {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif; }
 
 .ql-bubble {
   border: 1px solid #ced4da;
   border-radius: 0.2rem; }
 
 .ql-toolbar {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important; }
   .ql-toolbar span {
     outline: none !important; }
 
@@ -2769,7 +2776,7 @@ div.dt-button-info {
     padding: 10px 12px;
     background: #414d5f;
     color: #fff;
-    font-family: "Poppins", sans-serif; }
+    font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif; }
     .morris-hover.morris-default-style .morris-hover-row-label {
       font-weight: bold;
       margin: 0.25em 0;
@@ -2780,7 +2787,7 @@ div.dt-button-info {
       color: #fff; }
 
 .britechart, .tick text {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif;
   font-size: 0.75rem; }
 
 .horizontal-grid-line,
@@ -2906,24 +2913,24 @@ div.dt-button-info {
   color: #fff !important;
   font-size: 12px !important;
   line-height: 18px !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important;
   font-weight: 500 !important; }
 
 [data-plugin="knob"] {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important;
   font-weight: 600 !important; }
 
 .apex-charts {
   min-height: 10px !important; }
   .apex-charts text {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important;
     fill: #adb5bd; }
   .apex-charts .apexcharts-canvas {
     margin: 0 auto; }
 
 .apexcharts-tooltip-title,
 .apexcharts-tooltip-text {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important; }
 
 .apexcharts-legend-series {
   font-weight: 600; }
@@ -2934,7 +2941,7 @@ div.dt-button-info {
 
 .apexcharts-legend-text {
   color: #98a6ad !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important;
   font-size: 13px !important; }
 
 .apexcharts-pie-label {
@@ -2942,7 +2949,7 @@ div.dt-button-info {
 
 .apexcharts-yaxis text,
 .apexcharts-xaxis text {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto, Helvetica Neue, Helvetica", sans-serif !important;
   fill: #adb5bd; }
 
 .button-list {

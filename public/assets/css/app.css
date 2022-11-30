@@ -6,7 +6,7 @@ Website: https://coderthemes.com/
 Contact: support@coderthemes.com
 File: Main Css File
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Work+Sans:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600,700|Work+Sans:400,500,600");
 html {
   position: relative;
   min-height: 100%; }
@@ -72,7 +72,7 @@ body {
 
 .left-side-menu {
   width: 240px;
-  background: #3d454e;
+  background: #1F594A;
   bottom: 0;
   padding: 20px 0;
   position: fixed;
@@ -87,7 +87,7 @@ body {
   position: relative;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.925rem; }
   #sidebar-menu > ul > li > a:hover, #sidebar-menu > ul > li > a:focus, #sidebar-menu > ul > li > a:active {
     color: #a8bcd2;
@@ -374,7 +374,7 @@ body.enlarged {
   height: 70px;
   width: 240px;
   float: left;
-  background-color: #3d454e; }
+  background-color: #1F594A; }
 
 .navbar-custom {
   background-color: #ffffff;
@@ -458,7 +458,7 @@ body.enlarged {
 .notification-list {
   margin-left: 0; }
   .notification-list .noti-title {
-    background-color: #414d5f;
+    background-color: #1F594A;
     padding: 15px 20px;
     margin-top: -0.25rem; }
   .notification-list .noti-icon {
@@ -489,7 +489,7 @@ body.enlarged {
       text-overflow: ellipsis;
       white-space: nowrap;
       color: #414d5f;
-      font-family: "Work Sans", sans-serif; }
+      font-family: "Roboto", sans-serif; }
       .notification-list .notify-item .notify-details b {
         font-weight: 500; }
       .notification-list .notify-item .notify-details small {
@@ -615,11 +615,11 @@ body.enlarged {
   top: 0;
   bottom: 0; }
   .right-bar .rightbar-title {
-    background-color: #5089de;
+    background-color: #1F594A;
     padding: 27px 25px;
     color: #fff; }
   .right-bar .right-bar-toggle {
-    background-color: #505e74;
+    background-color: #1F594A;
     height: 24px;
     width: 24px;
     line-height: 27px;
@@ -710,7 +710,7 @@ body.boxed-layout.enlarged .footer {
   min-width: 160px; }
 
 .font-family-secondary {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .avatar-xs {
   height: 1.5rem;
@@ -1656,7 +1656,7 @@ body.boxed-layout.enlarged .footer {
   background-color: #f1f5f7;
   border-radius: 50%;
   margin: 5px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px; }
 
 .fc-button {
@@ -1734,12 +1734,12 @@ body.boxed-layout.enlarged .footer {
 
 .jq-toast-single {
   padding: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #5089de;
   font-size: 13px;
   line-height: 22px; }
   .jq-toast-single h2 {
-    font-family: "Poppins", sans-serif; }
+    font-family: "Roboto", sans-serif; }
   .jq-toast-single a {
     font-size: 0.8125rem; }
     .jq-toast-single a:hover {
@@ -1822,7 +1822,7 @@ body.boxed-layout.enlarged .footer {
   border-color: #f0643b; }
 
 .swal2-modal {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1); }
   .swal2-modal .swal2-title {
@@ -2033,7 +2033,7 @@ div.hopscotch-bubble {
     border-color: #5089de !important;
     text-shadow: none !important;
     margin: 0 0 0 5px !important;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff !important;
     font-weight: 400; }
   div.hopscotch-bubble .hopscotch-bubble-number {
@@ -2060,10 +2060,10 @@ div.hopscotch-bubble {
   div.hopscotch-bubble .hopscotch-bubble-arrow-container.down .hopscotch-bubble-arrow-border {
     border-top: 0 solid rgba(0, 0, 0, 0.5); }
   div.hopscotch-bubble h3 {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 10px; }
   div.hopscotch-bubble .hopscotch-content {
-    font-family: "Poppins", sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 .white-popup-block {
   background: #fff;
@@ -2291,7 +2291,7 @@ div.dt-button-info {
   .tablesaw thead tr:first-child th {
     border: none;
     font-weight: 500;
-    font-family: "Work Sans", sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 .tablesaw td {
   border-top: 1px solid #f1f5f7 !important; }
@@ -2384,7 +2384,7 @@ div.dt-button-info {
   border: none;
   background: #414d5f;
   color: #fff;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.8125rem;
   padding: 5px 8px; }
 
@@ -2405,7 +2405,7 @@ div.dt-button-info {
   max-width: 200px;
   display: none;
   color: #fff;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .mapael .zoomIn,
 .mapael .zoomOut,
@@ -2428,7 +2428,7 @@ div.dt-button-info {
   line-height: 24px; }
 
 .mapael .plotLegend text {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Roboto", sans-serif !important; }
 
 [data-plugin="customselect"] {
   display: none; }
@@ -2628,7 +2628,7 @@ div.dt-button-info {
   border-top: 6px solid #fff; }
 
 .daterangepicker {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 1px solid #e7eef1;
   -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.3);
           box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.3);
@@ -2712,14 +2712,14 @@ div.dt-button-info {
   z-index: 1; }
 
 .ql-container {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .ql-bubble {
   border: 1px solid #ced4da;
   border-radius: 0.2rem; }
 
 .ql-toolbar {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Roboto", sans-serif !important; }
   .ql-toolbar span {
     outline: none !important; }
 
@@ -2738,7 +2738,7 @@ div.dt-button-info {
 
 .legend tr {
   height: 30px;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .legendLabel {
   padding-left: 5px !important;
@@ -2757,7 +2757,7 @@ div.dt-button-info {
     display: none; } }
 
 .morris-chart text {
-  font-family: "Work Sans", sans-serif !important; }
+  font-family: "Roboto", sans-serif !important; }
 
 .morris-hover {
   position: absolute;
@@ -2769,18 +2769,18 @@ div.dt-button-info {
     padding: 10px 12px;
     background: #414d5f;
     color: #fff;
-    font-family: "Poppins", sans-serif; }
+    font-family: "Roboto", sans-serif; }
     .morris-hover.morris-default-style .morris-hover-row-label {
       font-weight: bold;
       margin: 0.25em 0;
-      font-family: "Work Sans", sans-serif; }
+      font-family: "Roboto", sans-serif; }
     .morris-hover.morris-default-style .morris-hover-point {
       white-space: nowrap;
       margin: 0.1em 0;
       color: #fff; }
 
 .britechart, .tick text {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.75rem; }
 
 .horizontal-grid-line,
@@ -2906,24 +2906,24 @@ div.dt-button-info {
   color: #fff !important;
   font-size: 12px !important;
   line-height: 18px !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 500 !important; }
 
 [data-plugin="knob"] {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 600 !important; }
 
 .apex-charts {
   min-height: 10px !important; }
   .apex-charts text {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     fill: #adb5bd; }
   .apex-charts .apexcharts-canvas {
     margin: 0 auto; }
 
 .apexcharts-tooltip-title,
 .apexcharts-tooltip-text {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Roboto", sans-serif !important; }
 
 .apexcharts-legend-series {
   font-weight: 600; }
@@ -2934,7 +2934,7 @@ div.dt-button-info {
 
 .apexcharts-legend-text {
   color: #98a6ad !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 13px !important; }
 
 .apexcharts-pie-label {
@@ -2942,7 +2942,7 @@ div.dt-button-info {
 
 .apexcharts-yaxis text,
 .apexcharts-xaxis text {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   fill: #adb5bd; }
 
 .button-list {
@@ -3078,7 +3078,7 @@ body.authentication-bg-pattern {
   text-shadow: rgba(80, 137, 222, 0.3) 5px 1px, rgba(80, 137, 222, 0.2) 10px 3px;
   font-size: 84px;
   line-height: 90px;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .post-user-comment-box {
   background-color: #f1f5f7;
@@ -3293,7 +3293,7 @@ body.authentication-bg-pattern {
 .counter-number {
   font-size: 32px;
   font-weight: 600;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
   .counter-number span {
     font-size: 15px;
     font-weight: 400;

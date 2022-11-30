@@ -29,7 +29,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>

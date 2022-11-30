@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\{
+	HomeController,
+	PostController
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +33,29 @@ Route::get('/terminos-y-condiciones', 'HomeController@Tycondiciones')->name('Tyc
 
 Auth::routes();
 
-// Route para los pots de las noticias
-Route::resource('/noticias', 'PostController');
-// Route para el dashboard, cuando haces login
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('Dashboard');
+
+// Route con auth
+Route::group(['middleware' => 'auth'], function(){
+	Route::prefix('dashboard')->group(function() {
+		// Route para el dashboard, cuando haces login
+		Route::get('/', [HomeController::class, 'dashboard'])->name('Dashboard');
+		// Route para los posts de las noticias
+		Route::resource('/noticias', 'PostController');
+		Route::get('/mapa-del-sitio', 'PostController@mapa')->name('mapa');
+	});
+});
+
+
+// Route con auth
+// Route::group(['middleware' => 'auth'], function(){
+// 	Route::prefix('dashboard')->as('dashboard.')->group(function() {
+// 		// Route para el dashboard, cuando haces login
+// 		Route::get('/', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('Dashboard');
+// 		// Route para los posts de las noticias
+// 		Route::resource('/noticias', 'PostController');
+// 		Route::get('/mapa-del-sitio', 'PostController@mapa')->name('mapa');
+// 	});
+// });
+
+
+

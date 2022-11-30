@@ -3,8 +3,6 @@
 Template Name: Xeria - Responsive Bootstrap 4 Admin Dashboard
 Author: CoderThemes
 Version: 1.0.0
-Website: https://coderthemes.com/
-Contact: support@coderthemes.com
 File: Custom Bootstrap Css File
 */
 /*!
@@ -42,7 +40,7 @@ File: Custom Bootstrap Css File
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-sans-serif: Roboto, Helvetica Neue, Helvetica, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -62,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4997,7 +4995,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5082,7 +5080,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8280,7 +8278,7 @@ a.text-purple:hover, a.text-purple:focus {
 
 .badge {
   color: #fff;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .badge-light {
   color: #414d5f; }
@@ -8994,7 +8992,7 @@ button:focus {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 500;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #414d5f; }
 
 .font-13 {
