@@ -38,6 +38,14 @@
                 <div class="card-box">
                     <div class="responsive-table-plugin">
                         <div class="table-rep-plugin">
+                            <div class="row">
+                                <div class="col-12 pt-2 mr-2">
+                                        @include('posts.utilities.alerts')
+                                    <a href="{{ route('noticias.create') }}" class="btn btn-sm btn-outline-primary">
+                                        Crear nueva noticia
+                                    </a>
+                                </div>
+                            </div>
                             <div class="table-responsive" data-pattern="priority-columns">
                                 <table id="basic-datatable" class="table table-striped ">
                                     <thead>
@@ -60,23 +68,29 @@
                                             <td scope="row">{{ $post->date }}</td>
                                             <td scope="row">{{ $post->author }}</td>
                                             <td scope="row">{{ $post->keywords }}</td>
-                                            <td>
+                                            <td class="td-actions btn-group-sm">
+                                                <a class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Ver" href="{{ route('noticias.show', $post->id) }}">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+
+                                                <a class="btn btn-warning" data-bs-toggle="tooltip" data-bs-title="Editar" href="{{ route('noticias.edit', $post->id) }}">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
                                                 <form method="POST" action="{{ route('noticias.destroy', $post->id) }}" style="display: inline-block;">
                                                     {{ csrf_field()}}
                                                     {{ method_field('DELETE')}}
 
-                                                    <button class="btn btn-danger" type="submit" data-bs-toggle="tooltip" data-bs-title="Borrar"><i class="fas fa-trash"></i></button>
+                                                    <button class="btn btn-sm btn-outline-danger" type="submit" data-bs-toggle="tooltip" data-bs-title="Borrar"><i class="fas fa-trash"></i></button>
                                                 </form>
-                                                    <a class="btn btn-warning" data-bs-toggle="tooltip" data-bs-title="Ver" href="{{ route('noticias.show', $post->id) }}"><i class="fas fa-eye"></i></a>
-
-                                                    <a class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Editar" href="{{ route('noticias.edit', $post->id) }}"><i class="fas fa-edit"></i></a>
                                             </td>
                                         </tr>
                                          @endforeach
                                     </tbody>
                                 </table>
                             </div> <!-- end .table-responsive -->
-
+                            <div class="card-footer mr-auto">
+                                {{ $posts->links() }}
+                            </div>
                         </div> <!-- end .table-rep-plugin-->
                     </div> <!-- end .responsive-table-plugin-->
                 </div> <!-- end card-box -->

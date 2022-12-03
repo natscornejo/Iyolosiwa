@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
 	HomeController,
-	PostController
+	PostController,
+	UserController,
+	PermissionController
 };
 
 /*
@@ -36,12 +38,25 @@ Auth::routes();
 
 // Route con auth
 Route::group(['middleware' => 'auth'], function(){
+
+	// DASHBOARD
 	Route::prefix('dashboard')->group(function() {
 		// Route para el dashboard, cuando haces login
 		Route::get('/', [HomeController::class, 'dashboard'])->name('Dashboard');
-		// Route para los posts de las noticias
-		Route::resource('/noticias', 'PostController');
+
+		// NOTICIAS
+		Route::resource('/noticias', 'PostController');//->name('Noticias');
+
+		// MAPA DEL SITIO
 		Route::get('/mapa-del-sitio', 'PostController@mapa')->name('mapa');
+
+		Route::resource('/usuarios', 'UserController');//->name('Usuarios');;
+
+		// USUARIOS
+		Route::prefix('usuarios')->group(function() {
+
+			Route::resource('/permisos', 'PermissionController');
+		});
 	});
 });
 

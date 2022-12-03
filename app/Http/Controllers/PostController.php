@@ -16,7 +16,7 @@ class PostController extends Controller
     public function index()
     {
         // Manda llmar a todos los elementos que se guardaron con la variable
-        $posts = Post::all();
+        $posts = Post::paginate(7);
 
         return view('posts.index')->with('posts', $posts);
     }
@@ -43,7 +43,7 @@ class PostController extends Controller
         $post->save();
 
         // Mensaje que se muestra cuando todo sale bien
-        Session::flash('exito', 'tu informacion se guardo');
+        Session::flash('Exito', 'Tu información se guardo correctamente');
 
         return redirect()->route('noticias.index');
         // Regresa a la pagina anterior/
@@ -84,7 +84,7 @@ class PostController extends Controller
         $post->save();
 
         // Mensaje que se muestra cuando todo sale bien
-        Session::flash('Actulizado', 'tu informacion se actulizo');
+        Session::flash('Actulizado', 'tu información se actulizó correctamente');
 
         // Regresa a la pagina anterior/
         return redirect()->route('noticias.index');

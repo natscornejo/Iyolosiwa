@@ -21,7 +21,36 @@
                     <a href="javascript: void(0);">
                         <i class="la la-users"></i>
                         <span> Usuarios </span>
+                        <span class="menu-arrow"></span>
                     </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="javascript: void(0);" aria-expanded="false">Usuarios
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-third-level nav" aria-expanded="false">
+                                <li>
+                                    <a href="{{ route('usuarios.create')}}">Crear nuevo usuario</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('usuarios.index')}}">Ver todos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" aria-expanded="false">Permisos
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-third-level nav" aria-expanded="false">
+                                <li>
+                                    <a href="{{ route('permisos.create')}}">Crear nuevo permiso</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('permisos.index')}}">Ver todos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
 
                 <li>

@@ -27,7 +27,7 @@
                 <!--Grid row-->
                 <div class="row">
                     <!--Grid column-->
-                    <div class="col-lg-3">
+                    <div class="col-sm-4">
                         <h5 class="text-uppercase">Inicio</h5>
 
                         <ul class="list-unstyled mb-0">
@@ -38,7 +38,7 @@
                     </div>
 
                     <!--Grid column-->
-                    <div class="col-lg-3">
+                    <div class="col-sm-4">
                         <h5 class="text-uppercase">Compañia</h5>
 
                         <ul class="list-unstyled mb-0">
@@ -61,19 +61,7 @@
                     </div>
 
                     <!--Grid column-->
-                    <div class="col-lg-3">
-                        <h5 class="text-uppercase">Aqui va algo</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Otro link</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <!--Grid column-->
-                    <div class="col-lg-3">
+                    <div class="col-sm-4">
                         <h5 class="text-uppercase">Cuenta</h5>
 
                         <ul class="list-unstyled mb-0">

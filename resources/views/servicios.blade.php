@@ -6,153 +6,219 @@
 
 @section('content')
 
-<div class="container col-lg-12">
-	<!-- Galeria -->
-		<main class="main">
-			<h1>Talleres</h1>
-			<section class="gallery">
-				<figure class="gallery__picture gallery__picture--g1">
-					<img src="{{ asset('img/img1.jpg') }}" class="gallery__img">
+	 <!-- Boton arriba -->
+	<div class="go-top-container">
+		<div class="go-top-button">
+			<i class="bi bi-chevron-up"></i>
+		</div>
+	</div>
+
+	<!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper">
+           <div class="swiper-slide" >
+                <img src="img/nosotros/pn2.jpg">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Galeria -->
+	<div class="container espacio3 col-lg-12">
+		<h1>Talleres</h1>
+	  	<a class="test" href="#horario"></a>
+		<main class="main">	
+			<section class="salto1  galeria2">
+				<figure class="galeria_servicios galeria_servicios--g1">
+					<img src="{{ asset('img/servicios/s1.jpg') }}" class="galeria_img">
 				</figure>
-				<figure class="gallery__picture2 gallery__picture--g2">
-					<img src="{{ asset('img/img2.jpg') }}" class="gallery__img">
+				<figure class="galeria_servicios2 galeria_servicios--g2">
+					<img src="{{ asset('img/servicios/s2.jpg') }}" class="galeria_img">
 				</figure>
-				<figure class="gallery__picture3 gallery__picture--g3">
-					<img src="{{ asset('img/img3.jpg') }}" class="gallery__img">
+				<figure class="galeria_servicios3 galeria_servicios--g3">
+					<img src="{{ asset('img/servicios/s3.jpg') }}" class="galeria_img">
 				</figure>
-				<figure class="gallery__picture4 gallery__picture--g4">
-					<img src="{{ asset('img/img4.jpg') }}" class="gallery__img">
+				<figure class="galeria_servicios4 galeria_servicios--g4">
+					<img src="{{ asset('img/servicios/s4.jpg') }}" class="galeria_img">
 				</figure>
-				<figure class="gallery__picture5 gallery__picture--g5">
-					<img src="{{ asset('img/img5.jpg') }}" class="gallery__img">
+				<figure class="galeria_servicios5 galeria_servicios--g5">
+					<img src="{{ asset('img/servicios/s5.jpg') }}" class="galeria_img">
 				</figure>
-				<figure class="gallery__picture6 gallery__picture--g6">
-					<img src="{{ asset('img/img6.jpg') }}" class="gallery__img">
+				<figure class="galeria_servicios6 galeria_servicios--g6">
+					<img src="{{ asset('img/servicios/s6.jpg') }}" class="galeria_img">
+				</figure>
+
+				<figure class="galeria_servicios7 galeria_servicios--g7">
+					<img src="{{ asset('img/servicios/s7.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios8 galeria_servicios--g8">
+					<img src="{{ asset('img/servicios/s8.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios9 galeria_servicios--g9">
+					<img src="{{ asset('img/servicios/s9.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios10 galeria_servicios--g10">
+					<img src="{{ asset('img/servicios/s10.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios11 galeria_servicios--g11">
+					<img src="{{ asset('img/servicios/s11.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios12 galeria_servicios--g12">
+					<img src="{{ asset('img/servicios/s12.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios13 galeria_servicios--g13">
+					<img src="{{ asset('img/servicios/s13.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios14 galeria_servicios--g14">
+					<img src="{{ asset('img/servicios/s14.jpg') }}" class="galeria_img">
+				</figure>
+				<figure class="galeria_servicios15 galeria_servicios--g15">
+					<img src="{{ asset('img/servicios/s15.jpg') }}" class="galeria_img">
 				</figure>
 			</section>
 		</main>
-	<!-- Galeria -->
-</div>
+	</div>
 
-<div class="container col-lg-12">
-	<table class="table table-sm table-hover table-borderless">
-	<thead>
-		<tr>
-			<th scope="col">#</th>
-			<th scope="col">Actividad</th>
-			<th scope="col">Día</th>
-			<th scope="col" colspan="2" >Horarios</th>
-		</tr>
-	</thead>
-		<tbody >
-			<tr>
-				<th scope="row">1</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Apoyo en tareas</td>
-				<td>Lunes a jueves</td>
-				<td>9:00 am - 10:00 pm</td>
-				<td>4:00 pm - 5:00 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">1</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Apoyo en tareas</td>
-				<td>Lunes a jueves</td>
-				<td>9:00 am - 10:00 pm</td>
-				<td>4:00 pm - 5:00 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">1</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Apoyo en tareas</td>
-				<td>Lunes a jueves</td>
-				<td>9:00 am - 10:00 pm</td>
-				<td>4:00 pm - 5:00 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">1</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Apoyo en tareas</td>
-				<td>Lunes a jueves</td>
-				<td>9:00 am - 10:00 pm</td>
-				<td>4:00 pm - 5:00 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">1</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Apoyo en tareas</td>
-				<td>Lunes a jueves</td>
-				<td>9:00 am - 10:00 pm</td>
-				<td>4:00 pm - 5:00 pm</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Ludoteca–Biblioteca con los niños</td>
-				<td>Lunes a viernes</td>
-				<td>9:00 am - 12:00 pm</td>
-				<td>4:00 pm - 6:30 pm</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+	<!-- Listado actividaes-->
+	<div class="container espacio2 col-lg-12" id="horario">
+		<table class="table table-sm table-hover table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Actividad</th>
+					<th scope="col">Día</th>
+					<th scope="col">Horario matutino</th>
+					<th scope="col">Horario vespertino</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Ludoteca–Biblioteca para niños</td>
+					<td>Lunes a viernes</td>
+					<td>9:00 am - 12:00 am</td>
+					<td>4:00 pm - 6:30 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">2</th>
+					<td>Apoyo en tareas</td>
+					<td>Lunes a jueves</td>
+					<td>9:00 am - 10:00 am</td>
+					<td>4:00 pm - 5:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">3</th>
+					<td>Lectura y escritura</td>
+					<td>Lunes a viernes</td>
+					<td>10:00 am - 11:00 am</td>
+					<td>4:00 pm - 5:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">4</th>
+					<td>Taller de coro para niños</td>
+					<td>Lunes y jueves</td>
+					<td></td>
+					<td>4:00 pm - 6:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">5</th>
+					<td>Juegos de mesa</td>
+					<td>Lunes a viernes</td>
+					<td>10:00 am - 11:00 am</td>
+					<td>5:00 pm - 6:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">6</th>
+					<td>Taller de guitarra para niños</td>
+					<td>Jueves</td>
+					<td></td>
+					<td>2:00 pm - 4:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">7</th>
+					<td>Taller de escritura</td>
+					<td>Lunes a jueves</td>
+					<td>9:00 am - 10:00 am</td>
+					<td>4:00 pm - 5:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">8</th>
+					<td>Formacion a mujer "Amor propio"</td>
+					<td>Lunes</td>
+					<td></td>
+					<td>5:00 pm - 6:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">9</th>
+					<td>Formación a jóvenes del servicio social</td>
+					<td>Lunes</td>
+					<td>9:00 am 10:00 am</td>
+					<td>4:00 pm - 5:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">10</th>
+					<td>Ludoteca–Biblioteca con los niños</td>
+					<td>Lunes a viernes</td>
+					<td>9:00 am - 12:00 pm</td>
+					<td>4:00 pm - 6:30 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">11</th>
+					<td>Inglés</td>
+					<td>Lunes, jueves y viernes</td>
+					<td>10:30 am - 12:00 pm</td>
+					<td>4:00 pm - 6:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">12</th>
+					<td>Formación a niños sobre finazas</td>
+					<td>Martes y jueves</td>
+					<td>9:30 am - 10:30 am</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th scope="row">13</th>
+					<td>Taller de maualidades para niños</td>
+					<td>Viernes</td>
+					<td></td>
+					<td>5:00 pm - 6:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">14</th>
+					<td>Acompañamiento psicoterapéutico a niños, jovenes y adultos</td>
+					<td>Lunes a jueves</td>
+					<td></td>
+					<td>9:00 am - 12:00 pm</td>
+				</tr>
+
+				<tr>
+					<th scope="row">15</th>
+					<td>Danza folklórica para niñas</td>
+					<td>Martes</td>
+					<td></td>
+					<td>4:00 pm - 6:00 pm</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Columna Gris -->
+	<section class="gris col-12 center">
+	</section>
 
 @endsection
 
