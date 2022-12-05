@@ -28,30 +28,38 @@ class PermissionController extends Controller
 
     public function store(Request $request)
     {
-        Permission::create($request->only('name'));
 
-        return redirect()->route('permissions.index');
+        Permission::create($request->only('name'));
+        // Permission::create($request->all());
+        // Permission::create($request->validated());
+
+        // Mensaje que se muestra cuando todo sale bien
+        Session::flash('Exito', 'Tu información se guardo correctamente');
+        return redirect()->route('permisos.index');
     }
 
     public function show(Permission $permission)
     {
         // abort_if(Gate::denies('permission_show'), 403);
 
-        return view('permissions.show', compact('permissions'));
+        return view('permissions.show', compact('permission'));
     }
 
     public function edit(Permission $permission)
     {
         // abort_if(Gate::denies('permission_edit'), 403);
 
-        return view('permissions.edit', compact('permissions'));
+        return view('permissions.edit', compact('permission'));
     }
 
     public function update(Request $request, Permission $permission)
     {
         $permission->update($request->only('name'));
 
-        return redirect()->route('permissions.index');
+        // Mensaje que se muestra cuando todo sale bien
+        Session::flash('Actulizado', 'tu información se actulizó correctamente');
+
+        return redirect()->route('permisos.index');
     }
 
     public function destroy(Permission $permission)
@@ -60,6 +68,9 @@ class PermissionController extends Controller
 
         $permission->delete();
 
-        return redirect()->route('permissions.index');
+        // Mensaje que se muestra cuando todo sale bien
+        Session::flash('Borrado', 'Tu publicación se ha borrado correctamente');
+
+        return redirect()->route('permisos.index');
     }
 }

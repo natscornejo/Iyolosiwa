@@ -36,7 +36,7 @@ class UserController extends Controller
 
         $roles = $request->input('roles', []);
         $user->syncRoles($roles);
-        return redirect()->route('users.index', $user->id);
+        return redirect()->route('usuarios.index', $user->id);
     }
 
     public function show($id)
@@ -78,7 +78,7 @@ class UserController extends Controller
 
         $roles = $request->input('roles', []);
         $user->syncRoles($roles);
-        return redirect()->route('users.index', $user->id);
+        return redirect()->route('usuarios.index', $user->id);
     }
 
     public function destroy(User $user)
@@ -86,7 +86,7 @@ class UserController extends Controller
         // abort_if(Gate::denies('user_destroy'), 403);
 
         if (auth()->user()->id == $user->id) {
-            return redirect()->route('users.index');
+            return redirect()->route('usuarios.index');
         }
 
         $user->delete();

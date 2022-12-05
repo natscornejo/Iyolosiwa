@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-//Ayudante para notificar cambios
 use Session;
 use App\Models\Post;
 use Illuminate\Http\Request;

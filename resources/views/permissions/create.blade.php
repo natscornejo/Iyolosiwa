@@ -22,7 +22,7 @@
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="{{ route('Inicio') }}">Iyolosiwa</a></li>
                                 <li class="breadcrumb-item"><a href="{{ route('Dashboard') }}">Dashboard</a></li>
-                                <li class="breadcrumb-item"><a href="{{ route('Users') }}">Users</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('usuarios.index') }}">Users</a></li>
                                 <li class="breadcrumb-item active">Permisos</li>
                             </ol>
                         </div>
@@ -38,7 +38,7 @@
             <div class="card p-2">
                 <div class="card-body">
                     <div class="">
-                        <h4 class="header-title">Nuva noticia</h4>
+                        <h4 class="header-title">Nuva permiso</h4>
                         <p class="sub-header">
                             Hola, en este espacio se crearan las noticias que se veran en la pagina principal.
                         </p>
@@ -48,39 +48,20 @@
                         <div class="row"> <!-- Aqui empieza el row -->
                             <div class="col-lg-6">
                                 <div class="form-floating mb-3">
-                                    <label for="floatingInput">Titulo</label>
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Titulo" name="title" required="">
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <label for="floatingInput">Fecha de publicacion</label>
-                                    <input type="date" class="form-control" id="floatingInput" placeholder="Fecha" name="date" required="">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="form-floating mb-3">
-                                    <label for="floatingInput">Autor</label>
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Autor" name="author">
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <label for="floatingInputValue" data-bs-toggle="tooltip" data-bs-title="Poner los Hashtags se parados por comas">Hashtags</label>
-                                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Hashtags" value="Iyolosiwa, "name="keywords">
+                                    <label for="floatingInput">Nombre del permiso</label>
+                                    <input type="text" class="form-control" id="floatingInput" name="name" required="" autofocus>
                                 </div>
                             </div>
 
                             <div class="col-lg-12">
-                                <div class="form-floating mb-3">
-                                    <label for="floatingTextarea">Contenido de la noticia</label>
-                                    <textarea type="text" class="form-control" id="floatingTextarea" placeholder="Contenido" style="height: 250px;" name="body" id="" required=""></textarea>
-                                </div>
 
                                 <div class="form-floating">
-                                    <a href="{{ route('permisos.index') }}" class="mb-3 btn btn-outline-danger">
-                                        Cancelar
+                                    <a href="{{ route('permisos.index') }}" class="btn btn-info btn-xs waves-effect mb-2 waves-light">
+                                        <i class="fas fa-window-close"></i> Cancelar
                                     </a>
-                                    <button class="mb-3 btn btn-warning" type="submit">Publicar noticia</button>
+                                    <button class="btn btn-outline-warning btn-xs waves-effect mb-2 waves-light" type="submit" data-bs-toggle="tooltip" data-bs-title="Borrar">
+                                        <i class="fas fa-check"></i>Crear permiso
+                                    </button>
                                 </div>
 
                                 <div class="form-group card-footer">
