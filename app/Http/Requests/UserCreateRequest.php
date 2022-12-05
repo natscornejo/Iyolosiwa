@@ -34,8 +34,8 @@ class UserCreateRequest extends FormRequest
     {
         return [
             'name.required' => 'Por favor, introduce tu nombre y appelido',
-            'email' => 'required|email|unique:users',
-            'password' => 'required'
+            'email' => 'Ese correo ya ha sido utilizado',
+            'password' => 'Se requiere la contraseña'
          ];    
     }
 }

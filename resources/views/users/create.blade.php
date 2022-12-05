@@ -81,6 +81,34 @@
                                     </span>
                                 @enderror
                             </div>
+
+                            <div class="row">
+                                <div class="form-floating mb-3">
+                                    <label for="floatingInput">Roles</label>
+                                    <div class="form-group">
+                                        <table class="table">
+                                            <tbody>
+                                                @foreach ($roles as $id => $role)
+                                                <tr>
+                                                    <td>
+                                                        <div class="from-check">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" name="roles[]" value="{{ $id }}">
+                                                                <span class="form-check-sign">
+                                                                    <span class="check"></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    {{ $role }}
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
                             
                             <div class="form-floating">
                                 <a href="{{ route('usuarios.index') }}" class="mb-3 btn btn-outline-danger">

@@ -5,7 +5,8 @@ use App\Http\Controllers\{
 	HomeController,
 	PostController,
 	UserController,
-	PermissionController
+	PermissionController,
+	RoleController
 };
 
 /*
@@ -56,6 +57,7 @@ Route::group(['middleware' => 'auth'], function(){
 		Route::prefix('usuarios')->group(function() {
 
 			Route::resource('/permisos', 'PermissionController');
+			Route::resource('/roles', 'RoleController');
 		});
 	});
 });

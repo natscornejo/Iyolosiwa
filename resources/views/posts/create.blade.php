@@ -38,7 +38,7 @@
             <div class="card p-2">
                 <div class="card-body">
                     <div class="">
-                        <h4 class="header-title">Nuva noticia</h4>
+                        <h4 class="header-title">Nueva noticia</h4>
                         <p class="sub-header">
                             Hola, en este espacio se crearan las noticias que se veran en la pagina principal.
                         </p>

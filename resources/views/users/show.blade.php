@@ -23,10 +23,10 @@
                                 <li class="breadcrumb-item"><a href="{{ route('Inicio') }}">Iyolosiwa</a></li>
                                 <li class="breadcrumb-item"><a href="{{ route('Dashboard') }}">Dashboard</a></li>
                                 <li class="breadcrumb-item"><a href="{{ route('usuarios.index') }}">Usuarios</a></li>
-                                <li class="breadcrumb-item active">{{ $user->name }}</li>
+                                <li class="breadcrumb-item active">Detalle de: {{ $user->name }}</li>
                             </ol>
                         </div>
-                        <h4 class="page-title">Información del usuario</h4>
+                        <h4 class="page-title">Detalle del usuario</h4>
                     </div>
                 </div>
             </div>     
@@ -41,9 +41,6 @@
                                 <img src="{{ asset('assets/images/users/Avatar-Lg-BWBLK-1.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
                                 <h4 class="font-24 mb-0">{{ $user->name }}</h4>
-                                <div class="font-20">
-                                    <span class="badge badge-light-success badge-pill">Role</span>
-                                </div>
                             </div> <!-- end card-box -->
 
                             <div class="">
@@ -60,6 +57,21 @@
                                 <p class="text-muted mb-2 font-13"><strong>Ultima actualización :</strong><span class="ml-2 ">{{ $user->updated_at }}</span></p>
                             </div>
 
+                            <div class="">
+                                <h4 class="header-title font-16 text-center text-uppercase mt-3">Roles</h4>
+                            </div>
+
+                            <div class="text-left mt-3">
+                                @forelse ($user->roles as $role)
+                                    <span class="badge badge-light-primary badge-pill">
+                                        {{ $role->name }}
+                                    </span>
+                                @empty
+                                    <span class="badge badge-light-secondary badge-pill">
+                                        Sin roles
+                                    </span>
+                                @endforelse
+                            </div>
 
                             <div class="p-2">
                                 <a href="{{ route('usuarios.index') }}" class="btn btn-info btn-xs waves-effect mb-2 waves-light">

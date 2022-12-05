@@ -63,9 +63,9 @@
                                             <td scope="row">{{ $user->email }}</td>
                                             <td>
                                             	@forelse ($user->roles as $role)
-                                    				<span class="badge badge-info">{{ $role->name }}</span>
+                                    				<span class="badge badge-light-success badge-pill">{{ $role->name }}</span>
                                   				@empty
-                                    				<span class="badge badge-danger">No roles</span>
+                                    				<span class="badge badge-light-danger badge-pill">sin roles</span>
                                   				@endforelse
                                             </td>
                                             <td>

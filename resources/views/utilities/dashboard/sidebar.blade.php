@@ -38,6 +38,19 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="javascript: void(0);" aria-expanded="false">Roles
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-third-level nav" aria-expanded="false">
+                                <li>
+                                    <a href="{{ route('roles.create')}}">Crear nuevo role</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('roles.index')}}">Ver todos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             <a href="javascript: void(0);" aria-expanded="false">Permisos
                                 <span class="menu-arrow"></span>
                             </a>
@@ -61,7 +74,7 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                     <li>
-                            <a href="{{ route('noticias.create')}}">Crear</a>
+                            <a href="{{ route('noticias.create')}}">Crear nueva noticia</a>
                         </li>
                         <li>
                             <a href="{{ route('noticias.index')}}">Ver todas</a>

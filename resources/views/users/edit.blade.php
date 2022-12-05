@@ -83,6 +83,34 @@
                                 @enderror
                             </div>
                             
+                            <div class="row">
+                                <label for="" class="col-sm2 col-form-label">
+                                    <span class="form-group">
+                                        <table class="table">
+                                            <tbody>
+                                                @foreach ($roles as $id => $role)
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" name="role[]" value="{{ $id }}" {{ $user->roles->contains($id) ? 'checked' : ''}}>
+                                                                <span class="form-check-sign">
+                                                                    <span class="check" value= ""></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        {{ $role }}
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </span>                                    
+                                </label>
+                            </div>
+
                             <div class="form-floating">
                                 <a href="{{ route('usuarios.index') }}" class="mb-3 btn btn-outline-danger">
                                     Cancelar
