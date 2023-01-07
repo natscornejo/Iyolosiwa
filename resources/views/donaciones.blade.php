@@ -1,81 +1,79 @@
 @extends('layouts.app')
 
 @section('contentNavBar')
-	@include('utilities.navbar')
+    @include('utilities.navbar')
 @endsection
 
 @section('content')
-
-     <!-- Boton arriba -->
+    <!-- Boton arriba -->
     <div class="go-top-container">
         <div class="go-top-button">
             <i class="bi bi-chevron-up"></i>
         </div>
-    </div>
+    </div> <!-- Boton arriba -->
 
     <!-- Background image -->
-    <div class=" text-center bg-image" style="background-image: url('img/donaciones/pd5.jpg'); height: 715px;">
-        <div class="mask2 col-sm-6" >
+    <div class="hola text-center bg-image" style="background-image: url('img/donaciones/pd5.jpg');">
+        <div class="mascara col-sm-6">
             <div class="  ">
                 <div class=" text-white">
-                    <h1 class="mb-6">"Tus acciones hoy, mueven a un millón"</h1>
-                    <a class="btn btn-outline-light btn-lg"  href="{{ route('Donaciones') }}" role="button"
-              >Donar</a>
+                    <h1 class="mb-8">"Ayúdanos a que este proyecto crezca"</h1>
+                    <a class="btn btn-warning btn-lg" href="https://www.paypal.com/donate/?hosted_button_id=7LGGT2ZKAJAPU"
+                        role="button">Donar</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Galeria -->
+    <!-- Background image -->
     <div class="container-fluid pt-5">
         <section class="section" id="feature">
-            <div class="container">
+            <div class="container  espacio1">
+                <h1 style="text-align: center;">Trasparencia</h1>
+                <br>
                 <div class="row justy-content-center">
                     <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="text-center feature-block">
-                            <div class="img-icon-block mb-4">
-                                <i class="bi bi-hand-thumbs-up"></i>
+                        <div class=" text-center feature-block">
+                            <div class="block mb-4">
+                                <h1 style="color: #FF8B12;">+90</h1>
                             </div>
-                            <h4 class="mb-2">The right advice</h4>
-                            <p class="textos">Our team are experts in matching you with the right provider.</p>
+                            <h4 class="mb-2">niños</h4>
+                            <p style="text-align: center;">asisten a nuestras instalaciones diariamente</p>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="text-center feature-block">
-                            <div class="img-icon-block mb-4">
-                                <i class="bi bi-trophy"></i>
+                        <div class=" text-center feature-block">
+                            <div class="block mb-4">
+                                <h1 style="color: #FF8B12;">+50</h1>
                             </div>
-                            <h4 class="mb-2">Recognised for excellence</h4>
-                            <p class="textos">We've been awarded for our high rate of customer satisfaction.</p>
+                            <h4 class="mb-2">Familias</h4>
+                            <p style="text-align: center;">apoyadas a lo largo del año</p>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="text-center feature-block">
-                            <div class="img-icon-block mb-4">
-                                <i class="bi bi-person-heart"></i>
+                        <div class=" text-center feature-block">
+                            <div class="block mb-4">
+                                <h1 style="color: #FF8B12;">18</h1>
                             </div>
-                            <h4 class="mb-2">Compare the best</h4>
-                            <p class="textos">We only compare market leaders with a reputation for service quality.</p>
+                            <h4 class="mb-2">Talleres</h4>
+                            <p style="text-align: center;">diferentes implementados en nuestras instalaciones</p>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="text-center feature-block">
-                            <div class="img-icon-block mb-4">
-                                <i class="bi bi-award"></i>
+                        <div class=" text-center feature-block">
+                            <div class="block mb-4">
+                                <h1 style="color: #FF8B12;">3,264</h1>
                             </div>
-                            <h4 class="mb-2">Premium Services</h4>
-                            <p class="textos">We only compare market leaders with a reputation for service quality.</p>
+                            <h4 class="mb-2">Clases y talleres</h4>
+                            <p style="text-align: center;">impartidos al año</p>
                         </div>
                     </div>
                 </div>
             </div> <!-- / .container -->
-        </section>  
+        </section>
     </div>
 @endsection
 
 @section('contentFooter')
-	@include('utilities.footer')
+    @include('utilities.footer')
 @endsection
